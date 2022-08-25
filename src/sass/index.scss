@@ -1,12 +1,16 @@
-@import './common';
+
 // @import './example';
 
+// Utils style
 @import './utils/vars';
 @import './utils/mixin';
 
+// Base style
+@import './base/common';
 @import './base/resets';
+@import './base/inherit';
 
-// Components
+// Components style
 @import './components/container';
 @import './components/button';
 
