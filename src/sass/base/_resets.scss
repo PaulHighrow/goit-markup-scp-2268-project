@@ -32,3 +32,9 @@ img {
   // object-fit: cover;
   // object-position: center;
 }
+
+// Reset display inline, forbid icon shrink
+svg {
+  display: block;
+  flex-shrink: 0;
+}
