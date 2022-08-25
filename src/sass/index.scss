@@ -2,10 +2,13 @@
 // @import './example';
 
 @import './utils/vars';
+@import './utils/mixin';
 
 @import './base/resets';
 
+// Components
 @import './components/container';
+@import './components/button';
 
 // layout style
 @import './layout/header';

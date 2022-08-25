@@ -1,4 +1,5 @@
-// Скидання вбудованої геометрії списків, абзаців та заголовків
+
+// Reset tag indents
 h1,
 h2,
 h3,
@@ -6,24 +7,28 @@ h4,
 h5,
 h6,
 p,
-ul {
+ul,
+ol {
   margin: 0;
   padding: 0;
 }
 
-// Скидання чотирипіксельних відступів в зображень та іконок
-img,
-svg {
-  display: block;
+// Reset the link underline
+a {
+  text-decoration: none;
 }
 
-// Забезпечення респонсивності зображень
+// Reset list markers
+ul,
+ol {
+  list-style: none;
+}
+
+// Reset display inline
 img {
+  display: block;
   max-width: 100%;
   height: auto;
-}
-
-// Заборона зміни розміру іконок
-svg {
-  flex-shrink: 0;
+  // object-fit: cover;
+  // object-position: center;
 }
