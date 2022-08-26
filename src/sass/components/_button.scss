@@ -1,0 +1,10 @@
+// Button style
+.btn {
+  padding: 6px 17px;
+  @include font(14px, 400, 24px);
+  color: var(--main-color);
+  background-color: var(--button-color);
+  border: 1px solid transparent;
+  border-radius: 30px;
+  cursor: pointer;
+}
