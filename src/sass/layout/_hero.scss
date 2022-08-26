@@ -1,6 +1,19 @@
 // Hero style
 .hero {
+    display: flex;
     background-color: red;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item:last-child {
+        width: 100%;
+        margin-left: 10px;
+        display: block;
+       
+    }
 
     &__title {
         color: var(--main-color, #2c2c2c);
@@ -10,5 +23,31 @@
     &__text {
         color: var(--main-color, #2c2c2c);
         @include font(14px, 400, 24px);
+        
     }
+}
+
+image-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__slider {
+        text-align: center;
+    }
+}
+
+.image-slider .swiper-button-prev::after,
+.image-slider .swiper-button-next::after {
+    display: none;  
+}
+
+
+
+.image-slider .swiper-pagination-bullet {
+width: 10px;
+height: 10px;
+line-height: 20px;
+font-size: 20px;
+background-color: var(--button-color, #bbf330);    
 }

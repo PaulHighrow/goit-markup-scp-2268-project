@@ -1,28 +1,20 @@
-// Swaper
+// Swaper start
 
-import Swiper, { Navigation, Pagination } from 'swiper';
-Swiper.use([Navigation, Pagination]); 
+new Swiper('.image-slider', {
+    // Navigation
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+    // Pagination
+    pagination: {
+        el: '.swiper-pagination',
+        // Bullet
+        clickable: true,
+        // Dinamic bullet
+        dinamicBullets: true, 
+    },
 });
 
 // Swaper end

@@ -18,34 +18,43 @@
         </li>
         <li class="hero__item">
             <!-- Slider main container -->
-            <div class="swiper">
+            <div class="image-slider swiper-container">
               <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
+              <div class="image-slider__wrapper swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide">
-                  <img src="./images/foto.jpg" alt="Блюдо" width="528" height="528">
+                <div class="image-slider__slade swiper-slide">
+                  <div class="image-slider__image">
+                    <img src="./images/foto.jpg" alt="Блюдо" width="528" height="528">
+                  </div>
                 </div>
-                <div class="swiper-slide">
-                  <img src="./images/foto.jpg" alt="Блюдо" width="528" height="528">
+                <div class="image-slider__slade swiper-slide">
+                  <div class="image-slider__image">
+                    <img src="./images/foto3.png" alt="Блюдо" width="528" height="528">
+                  </div>
                 </div>
-                <div class="swiper-slide">
-                  <img src="./images/foto.jpg" alt="Блюдо" width="528" height="528">
+                <div class="image-slider__slade swiper-slide">
+                  <div class="image-slider__image">
+                    <img src="./images/foto4.png" alt="Блюдо" width="528" height="528">
+                  </div>
+                </div>  
+              </div>
+              <div>
+                <div class="swiper-button-prev">
+                  <svg class="swiper-button-prev" width="48" height="40">
+                    <use href="./images/sprite.svg#icon-pagination-left"></use>
+                  </svg>
+                </div>
+                <div class="swiper-button-next">
+                  <svg class="swiper-button-next" width="48" height="40">
+                    <use href="./images/sprite.svg#icon-pagination-right"></use>
+                  </svg>
                 </div>
               </div>
+              <!-- If we need navigation buttons -->
+              
+
               <!-- If we need pagination -->
               <div class="swiper-pagination"></div>
-            
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev">
-                <svg class="left" width="48" height="40">
-                  <use href="./images/sprite.svg#icon-pagination-right"></use>
-              </svg>
-            </div>
-              <div class="swiper-button-next">
-                <svg class="left" width="48" height="40">
-                  <use href="./images/sprite.svg#icon-pagination-left"></use>
-                </svg>
-              </div>
 
               <!-- If we need scrollbar -->
               <div class="swiper-scrollbar"></div>
