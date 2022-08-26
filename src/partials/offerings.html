@@ -1,28 +1,30 @@
 <section class="offerings">
   <div class="offerings__content container">
     <div class="offerings__size">
-      <img
-        class="offerings__img-border"
-        srcset="
-          ./images/png/apple-mobile@1x-280.png  280w,
-          ./images/png/apple-mobile@2x-560.png  560w,
-          ./images/png/apple-pc@1x-550.png      550w,
-          ./images/png/apple-pc@2x-1100.png    1100w
-        "
-        sizes="(min-width: 1200px) 550px, 280px"
-        src="./images/png/apple-mobile@1x-280.png"
-        alt="apple"
-      />
-      <img
-        class="offerings__img-middle"
-        srcset="
-          ./images/png/apple-tablet@1x-704.png   704w,
-          ./images/png/apple-tablet@2x-1408.png 1408w
-        "
-        sizes="(min-width: 768px) 704px"
-        src="./images/png/apple-mobile@1x-280.png"
-        alt="apple"
-      />
+      <picture>
+        <source
+          srcset="
+          ./images/png/apple-pc@1x-550.png  1x,
+          ./images/png/apple-pc@2x-1100.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source 
+          srcset="
+          ./images/png/apple-tablet@1x-704.png 1x,
+          ./images/png/apple-tablet@2x-1408.png 2x,
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+          ./images/png/apple-mobile@1x-280.png 1x,
+          ./images/png/apple-mobile@2x-560.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img src="./images/png/apple-mobile@2x-560.png" alt="apple" />
+      </picture>
     </div>
     <div class="offerings__field">
       <div class="offerings__thumb">
