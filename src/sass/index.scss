@@ -5,6 +5,10 @@
 @import './utils/mixin';
 @import './utils/animations';
 
+// Vendor styles
+@import './vendor/vendor';
+
+
 // Base styles
 @import './base/common';
 @import './base/resets';
@@ -17,4 +21,5 @@
 // layout styles
 @import './layout/header';
 @import './layout/hero';
+@import './layout/offerings';
 @import "./layout/customers";
