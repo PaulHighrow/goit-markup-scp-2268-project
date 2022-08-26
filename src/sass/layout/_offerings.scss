@@ -1,7 +1,6 @@
 .offerings {
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1050px;
   background-image: url(../images/bg/bg-top-mobile@1x-320.png);
   /*background for DPR 2.0*/
   @media (min-device-pixel-ratio: 2),
@@ -12,7 +11,6 @@
   /*bg from 768 px*/
   @media screen and (min-width: 768px) {
     background-image: url(../images/bg/bg-top-tablet@1x-768.png);
-    height: 1140px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -21,7 +19,6 @@
   }
   @media screen and (min-width: 1280px) {
     background-image: url(../images/bg/bg-top-pc@1x-1280.png);
-    height: 856px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
