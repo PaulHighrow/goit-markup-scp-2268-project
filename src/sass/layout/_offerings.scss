@@ -1,0 +1,106 @@
+.offerings {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1050px;
+  background-image: url(../images/bg/bg-top-mobile@1x-320.png);
+  /*background for DPR 2.0*/
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bg/bg-top-mobile@2x-640.png);
+  }
+  /*bg from 768 px*/
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/bg/bg-top-tablet@1x-768.png);
+    height: 1140px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg/bg-top-tablet@2x-1536.png);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/bg/bg-top-pc@1x-1280.png);
+    height: 856px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg/bg-top-pc@2x-2560.png);
+    }
+  }
+}
+
+.offerings__size {
+  padding-top: 49px;
+}
+.offerings__img-border {
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.offerings__img-middle {
+  display: none;
+}
+.offerings__thumb {
+  margin-bottom: 28px;
+}
+.offerings__title {
+  margin-bottom: 28px;
+  @include font(28px, 700, 33px);
+}
+.offerings__description {
+  @include font(14px, 400, 16px);
+}
+.offerings__list {
+  margin-bottom: 28px;
+}
+.offerings__item {
+  &:first-child {
+    margin-bottom: 28px;
+  }
+}
+.offerings__picture {
+  position: relative;
+  margin-bottom: 8px;
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.offerings__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.offerings__slogan {
+  margin-bottom: 16px;
+  @include font(18px, 700, 21px);
+}
+.offerings__subject {
+  @include font(14px, 400, 16px);
+}
+.offerings__link {
+  text-decoration: none;
+
+  color: inherit;
+  font-weight: 400;
+  font-size: 13.6667px;
+  line-height: 150%;
+}
+.offerings__options {
+  color: #000000;
+}
+.offerings__button {
+  margin-right: 21px;
+  font-size: 14px;
+  line-height: 150%;
+  padding: 10px 31px;
+  background-color: #fefefe;
+  border: 2px solid var(--border-color);
+  border-radius: 30px;
+}
+.offerings__part {
+  font-size: 25px;
+  vertical-align: text-bottom;
+}

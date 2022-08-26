@@ -1,5 +1,70 @@
-<section>
-    <div class="container">
-        
+<section class="offerings">
+  <div class="offerings__content container">
+    <div class="offerings__size">
+      <img
+        class="offerings__img-border"
+        srcset="
+          ./images/png/apple-mobile@1x-280.png  280w,
+          ./images/png/apple-mobile@2x-560.png  560w,
+          ./images/png/apple-pc@1x-550.png      550w,
+          ./images/png/apple-pc@2x-1100.png    1100w
+        "
+        sizes="(min-width: 1200px) 550px, 280px"
+        src="./images/png/apple-mobile@1x-280.png"
+        alt="apple"
+      />
+      <img
+        class="offerings__img-middle"
+        srcset="
+          ./images/png/apple-tablet@1x-704.png   704w,
+          ./images/png/apple-tablet@2x-1408.png 1408w
+        "
+        sizes="(min-width: 768px) 704px"
+        src="./images/png/apple-mobile@1x-280.png"
+        alt="apple"
+      />
     </div>
+    <div class="offerings__field">
+      <div class="offerings__thumb">
+        <h1 class="offerings__title">What’s Special About Our Offerings</h1>
+        <p class="offerings__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+          ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+        </p>
+      </div>
+      <ul class="offerings__list">
+        <li class="offerings__item">
+          <div class="offerings__picture">
+            <svg class="offerings__icon" width="32" height="32">
+              <use href="./images/svg/icons.svg#rocket"></use>
+            </svg>
+          </div>
+          <h3 class="offerings__slogan">Fasest Delivery</h3>
+          <p class="offerings__subject">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </li>
+        <li class="offerings__item">
+          <div class="offerings__picture">
+            <svg class="offerings__icon" width="32" height="32">
+              <use href="./images/svg/icons.svg#touch"></use>
+            </svg>
+          </div>
+          <h3 class="offerings__slogan">Easy to order</h3>
+          <p class="offerings__subject">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </li>
+      </ul>
+      <div class="offerings__options">
+        <button class="offerings__button">Order Now</button>
+        <a class="offerings__link" href=""
+          >Read More <span class="offerings__part">&#8250;</span></a
+        >
+      </div>
+    </div>
+  </div>
 </section>
