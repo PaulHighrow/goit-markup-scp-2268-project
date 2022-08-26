@@ -80,6 +80,8 @@
 .offerings__link {
   text-decoration: none;
 
+  @include flexbox(inline-flex, center, center, row);
+
   color: inherit;
   font-weight: 400;
   font-size: 13.6667px;
@@ -97,7 +99,7 @@
   border: 2px solid var(--border-color);
   border-radius: 30px;
 }
-.offerings__part {
-  font-size: 25px;
-  vertical-align: text-bottom;
+.offerings__more {
+  width: 14px;
+  height: 14px;
 }

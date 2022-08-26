@@ -4,22 +4,22 @@
       <picture>
         <source
           srcset="
-          ./images/png/apple-pc@1x-550.png  1x,
-          ./images/png/apple-pc@2x-1100.png 2x
+            ./images/png/apple-pc@1x-550.png  1x,
+            ./images/png/apple-pc@2x-1100.png 2x
           "
           media="(min-width: 1280px)"
         />
-        <source 
+        <source
           srcset="
-          ./images/png/apple-tablet@1x-704.png 1x,
-          ./images/png/apple-tablet@2x-1408.png 2x,
+            ./images/png/apple-tablet@1x-704.png  1x,
+            ./images/png/apple-tablet@2x-1408.png 2x
           "
           media="(min-width: 768px)"
         />
         <source
           srcset="
-          ./images/png/apple-mobile@1x-280.png 1x,
-          ./images/png/apple-mobile@2x-560.png 2x
+            ./images/png/apple-mobile@1x-280.png 1x,
+            ./images/png/apple-mobile@2x-560.png 2x
           "
           media="(max-width: 767px)"
         />
@@ -64,8 +64,11 @@
       <div class="offerings__options">
         <button class="offerings__button">Order Now</button>
         <a class="offerings__link" href=""
-          >Read More <span class="offerings__part">&#8250;</span></a
-        >
+          >Read More
+          <svg class="offerings__more">
+            <use href="./images/svg/icons.svg#more"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </div>
