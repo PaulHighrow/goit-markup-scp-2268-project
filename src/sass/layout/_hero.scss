@@ -1,7 +1,7 @@
 // Hero style
 .hero {
     display: flex;
-    background-color: red;
+    // background-color: red;
 
     &__list {
         display: flex;
@@ -9,9 +9,9 @@
     }
 
     &__item:last-child {
-        width: 100%;
-        margin-left: 10px;
-        display: block;
+        display: flex;
+        width: 580px;
+        height: 580px;
        
     }
 
@@ -27,31 +27,58 @@
     }
 }
 
-.slider {
-    overflow: hidden;
+.swiper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 26px solid #FFE550;
 }
 
-image-slider {
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
-
-    &__slider {
-        text-align: center;
-    }
 }
 
-.image-slider .swiper-button-prev::after,
-.image-slider .swiper-button-next::after {
-    display: none;  
+.swiper-slide__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
+.swiper-pagination-bullet-active {
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+    border-radius: unset;
+    width: 20px;
+    height: 20px;
+}
 
+ 
+.swiper-button-next::after,
+.swiper-button-prev::after {
+display: none;
+}
 
-.image-slider .swiper-pagination-bullet {
-width: 10px;
-height: 10px;
-line-height: 20px;
-font-size: 20px;
-background-color: var(--button-color, #bbf330);    
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    background-color: transparent;
+    border: transparent;
 }
