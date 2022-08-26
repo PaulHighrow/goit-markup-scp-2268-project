@@ -1,0 +1,168 @@
+.offerings {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/bg/bg-top-mobile@1x-320.png);
+  /*background for DPR 2.0*/
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bg/bg-top-mobile@2x-640.png);
+  }
+  /*bg from 768 px*/
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/bg/bg-top-tablet@1x-768.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg/bg-top-tablet@2x-1536.png);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/bg/bg-top-pc@1x-1280.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg/bg-top-pc@2x-2560.png);
+    }
+  }
+  &__content {
+    padding-top: 49px;
+    padding-bottom: 52px;
+    @media screen and (min-width: 768px) {
+      padding-top: 150px;
+      padding-bottom: 100px;
+    }
+    @media screen and (min-width: 1280px) {
+      display: flex;
+      gap: 90px;
+      padding-top: 177px;
+      padding-bottom: 75px;
+      align-items: center;
+    }
+  }
+  &__size {
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 0;
+    }
+  }
+  &__pic {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &__thumb {
+    margin-bottom: 28px;
+    @media screen and (min-width: 768px) {
+      width: 526px;
+      margin-bottom: 40px;
+    }
+  }
+  &__title {
+    margin-bottom: 28px;
+    @include font(28px, 700, 33px);
+    @media screen and (min-width: 768px) {
+      margin-bottom: 20px;
+      @include font(42px, 700, 49px);
+    }
+  }
+  &__description {
+    @include font(14px, 400, 16px);
+    @media screen and (min-width: 768px) {
+      @include font(16px, 400, 19px);
+    }
+  }
+  &__list {
+    margin-bottom: 28px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 32px;
+    }
+  }
+  &__item {
+    &:first-child {
+      margin-bottom: 28px;
+    }
+    &::before {
+      content: '';
+      display: block;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      margin-bottom: 8px;
+      background-color: #ffffff;
+    }
+    @media screen and (min-width: 768px) {
+      width: 252px;
+      &:first-child {
+        margin-bottom: 0;
+        margin-right: 116px;
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      &:first-child {
+        margin-right: 67px;
+      }
+    }
+  }
+  &__rocket::before {
+    background-image: url(../images/svg/backup/rocket.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__touch::before {
+    background-image: url(../images/svg/backup/touch.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__slogan {
+    margin-bottom: 16px;
+    @include font(18px, 700, 21px);
+  }
+  &__subject {
+    @include font(14px, 400, 16px);
+  }
+  &__link {
+    text-decoration: none;
+
+    @include flexbox(inline-flex, center, center, row);
+
+    color: inherit;
+    font-weight: 400;
+    font-size: 13.6667px;
+    line-height: 150%;
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
+  &__options {
+    color: #000000;
+  }
+  &__button {
+    margin-right: 21px;
+    font-size: 14px;
+    line-height: 150%;
+    padding: 10px 31px;
+    background-color: #fefefe;
+    border: 2px solid var(--border-color);
+    border-radius: 30px;
+    cursor: pointer;
+    &:hover {
+      border-color: var(--border-hover-color);
+    }
+    @media screen and (min-width: 1280px) {
+      padding-left: 20px;
+      padding-right: 20px;
+      color: var(--main-color);
+    }
+  }
+  &__more {
+    width: 14px;
+    height: 14px;
+  }
+}
