@@ -1,21 +1,23 @@
-// Utils style
+
+// Utils styles
 @import './utils/vars';
 @import './utils/visually-hidden';
 @import './utils/mixin';
 @import './utils/animations';
 
-// Vendor
+// Vendor styles
 @import './vendor/vendor';
 
-// Base style
+
+// Base styles
 @import './base/common';
 @import './base/resets';
 @import './base/inherit';
 
-// Components style
+// Components styles
 @import './components/container';
 @import './components/button';
 
-// layout style
+// layout styles
 @import './layout/header';
 @import './layout/hero';
