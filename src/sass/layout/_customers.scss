@@ -159,8 +159,16 @@
     border-radius: 50%;
 }
 
-.customers__title--name {
-    font-weight: 500;
+.customers__name {
+    text-align: start;
+    font-weight: 700;
     font-size: 13.6667px;
     line-height: 150%;
+}
+
+.customers__description {
+    text-align: start;
+    font-weight: 400;
+        font-size: 13.6667px;
+        line-height: 150%
 }
