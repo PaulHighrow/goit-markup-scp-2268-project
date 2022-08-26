@@ -17,10 +17,39 @@
           <button type="button" class="btn">Order Now</button>
         </li>
         <li class="hero__item">
-          <img src="./images/foto.jpg" alt="Блюдо" width="528" height="528">
-          <svg width="" height="">
-            <use href="../images/"></use>
-          </svg>
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="./images/foto.jpg" alt="Блюдо" width="528" height="528">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/foto.jpg" alt="Блюдо" width="528" height="528">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/foto.jpg" alt="Блюдо" width="528" height="528">
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev">
+                <svg class="left" width="48" height="40">
+                  <use href="./images/sprite.svg#icon-pagination-right"></use>
+              </svg>
+            </div>
+              <div class="swiper-button-next">
+                <svg class="left" width="48" height="40">
+                  <use href="./images/sprite.svg#icon-pagination-left"></use>
+                </svg>
+              </div>
+
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
         </li>
         
       </ul>

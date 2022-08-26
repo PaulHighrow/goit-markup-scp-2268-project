@@ -4,7 +4,10 @@
 @import './utils/mixin';
 @import './utils/animations';
 
-// Base style
+// Vendor
+@import './vendor/vendor';
+
+// Base
 @import './base/common';
 @import './base/resets';
 @import './base/inherit';
