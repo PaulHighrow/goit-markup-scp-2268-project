@@ -3,9 +3,9 @@
     background-color: red;
 
     &__title {
-            color: var(--main-color, #2c2c2c);
-            @include font(48px, 700, 58px);
-        }
+        color: var(--main-color, #2c2c2c);
+        @include font(48px, 700, 58px);
+    }
 
     &__text {
         color: var(--main-color, #2c2c2c);
