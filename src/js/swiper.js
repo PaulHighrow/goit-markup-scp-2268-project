@@ -1,4 +1,4 @@
-// Swaper start
+// Swiper start
 
 var swiper = new Swiper(".mySwiper", {
                 pagination: {
@@ -30,4 +30,4 @@ var swiper = new Swiper(".mySwiper", {
 //     },
 // });
 
-// Swaper end
+// Swiper end
