@@ -4,19 +4,71 @@
 
   &__container {
     position: relative;
+    @media screen and (min-width: 768px) {
+      @include flexbox(flex, center, center, row);
+    }
+  }
+
+  &__btn {
+    display: none;
+    padding: 6px 17px;
+    @include font(14px, 400, 21px);
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
   }
 }
 
 .logo {
   width: 66px;
   height: 52px;
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+  }
 }
 
-.menu {
-  width: 28px;
-  height: 28px;
+.nav {
+  &__list {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      gap: 28px;
+      @include flexbox(flex, center, center, row);
+      margin-right: 28px;
+    }
+  }
+
+  &__link {
+    color: var(--main-color);
+    transition: color var(--animation-global),
+      text-decoration-line var(--animation-global);
+
+    &:hover,
+    &:focus {
+      color: var(--button-color);
+      text-decoration-line: underline;
+    }
+  }
+}
+
+.menu__btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 20px;
   transform: translateY(-50%);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu__icon {
+  width: 28px;
+  height: 28px;
 }
