@@ -8,7 +8,7 @@
 // Base styles
 @import './base/common';
 @import './base/resets';
-@import './base/inherit';
+@import "./base/inherit";
 
 // Components styles
 @import './components/container';
@@ -17,3 +17,4 @@
 // layout styles
 @import './layout/header';
 @import './layout/hero';
+@import "./layout/customers";

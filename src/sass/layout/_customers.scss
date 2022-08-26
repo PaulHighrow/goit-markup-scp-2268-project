@@ -1,39 +1,49 @@
 .customers {
-    background-color: orange;
+    margin: 0 auto;
+    max-width: 480px;
     padding-top: 60px;
-    padding-bottom: 53px;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-image: url(../images/bg/bg-bottom-mobile@1x-640.png);
+    padding-bottom: 54px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/bg/bg-bottom-mobile@1x-320.png);
 
-    // @media (min-device-pixel-ratio: 2),
-    // (min-resolution: 192dpi),
-    // (min-resolution: 2dppx) {
-    //     background-image: url(../images/bg/bg-bottom-mobile@2x-640.png);
-    // }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../images/bg/bg-bottom-mobile@2x-640.png);
+    }
 
-    // @media screen and (min-width: 768px) {
-    //     background-image: url(../images/bg/bg-bottom-tablet@1x-768.png);
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/bg/bg-bottom-tablet@1x-768.png);
 
-    //     @media (min-device-pixel-ratio: 2),
-    //     (min-resolution: 192dpi),
-    //     (min-resolution: 2dppx) {
-    //         background-image: url(../images/bg/bg-bottom-tablet@2x-1536.png);
-    //     }
-    // }
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/bg/bg-bottom-tablet@2x-1536.png);
+        }
+    }
 
-    // @media screen and (min-width: 1280px) {
-    //     background-image: url(../images/bg/bg-bottom-pc@1x-1280.png);
+    @media screen and (min-width: 1280px) {
+        background-image: url(../images/bg/bg-bottom-pc@1x-1280.png);
 
-    //     @media (min-device-pixel-ratio: 2),
-    //     (min-resolution: 192dpi),
-    //     (min-resolution: 2dppx) {
-    //         background-image: url(../images/bg/bg-bottom-pc@2x-2560.png);
-    //     }
-    // }
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/bg/bg-bottom-pc@2x-2560.png);
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        max-width: 786px;
+        padding-top: 59px;
+        padding-bottom: 115px;
+
+    }
 
     @media screen and (min-width:1280px) {
+        max-width: 1280px;
         padding-top: 100px;
+        padding-bottom: 213px;
     }
 }
 
@@ -116,8 +126,7 @@
     margin-bottom: 32px;
 }
 
-.customers__icons {
-    background-color: orange;
+.customers__icons {    
     margin-bottom: 28px;
 }
 
