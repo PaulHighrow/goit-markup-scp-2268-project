@@ -70,9 +70,9 @@
       border-color: var(--warning-color);
     }
 
-    // &:invalid ~ .form__invalid {
-    //   opacity: 1;
-    // }
+    &:invalid ~ .form__invalid {
+      opacity: 1;
+    }
   }
 
   &__btn {
