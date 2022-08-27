@@ -9,32 +9,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
-  background-image: url(../images/bg/bg-bottom-mobile@1x-320.png);
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/bg/bg-bottom-mobile@2x-640.png);
-  }
+  background-image: url(../images/bg/bg-mobile-bottom.svg);
 
   @media screen and (min-width: 768px) {
-    background-image: url(../images/bg/bg-bottom-tablet@1x-768.png);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/bg/bg-bottom-tablet@2x-1536.png);
-    }
+    background-image: url(../images/bg/bg-tablet-bottom.svg);
   }
-
   @media screen and (min-width: 1280px) {
-    background-image: url(../images/bg/bg-bottom-pc@1x-1280.png);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/bg/bg-bottom-pc@2x-2560.png);
-    }
+    background-image: url(../images/bg/bg-pc-bottom.svg);
   }
 
   @media screen and (min-width: 768px) {

@@ -2,29 +2,13 @@
   &__content {
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../images/bg/bg-top-mobile@1x-320.png);
-    /*background for DPR 2.0*/
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/bg/bg-top-mobile@2x-640.png);
-    }
-    /*bg from 768 px*/
+    background-image: url(../images/bg/bg-mobile-top.svg);
+
     @media screen and (min-width: 768px) {
-      background-image: url(../images/bg/bg-top-tablet@1x-768.png);
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/bg/bg-top-tablet@2x-1536.png);
-      }
+      background-image: url(../images/bg/bg-tablet-top.svg);
     }
     @media screen and (min-width: 1280px) {
-      background-image: url(../images/bg/bg-top-pc@1x-1280.png);
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/bg/bg-top-pc@2x-2560.png);
-      }
+      background-image: url(../images/bg/bg-pc-top.svg);
     }
 
     padding-top: 41px;
