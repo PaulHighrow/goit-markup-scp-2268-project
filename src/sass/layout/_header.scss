@@ -32,21 +32,16 @@
 }
 
 .nav {
-  position: absolute;
-  top: 75%;
-  right: 20px;
-  width: 130px;
-  overflow: hidden;
-  @include flexbox(flex, center, flex-start, column);
-  background-color: var(--bg-color);
-  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
-  border-radius: 30px 0px 30px 30px;
+  @include font(16px, null, 19px);
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   @media screen and (min-width: 768px) {
-    display: block;
     gap: 28px;
-    @include flexbox(flex, center, center, row);
     margin-right: 28px;
+    @include font(14px, null, 16px);
+    @include flexbox(flex, center, center, row);
   }
 
   &__link {
@@ -58,22 +53,46 @@
     transition: color var(--animation-global),
       text-underline-offset var(--animation-global);
 
+    @media screen and (min-width: 768px) {
+      padding: 0;
+    }
+
     &:hover,
     &:focus,
     &:active {
-      background-color: var(--button-color);
+      @media screen and (max-width: 767px) {
+        background-color: var(--button-color);
+      }
 
       @media screen and (min-width: 768px) {
-        font-weight: 700;
+        font-weight: 500;
         text-decoration: underline;
         color: var(--button-color);
         text-underline-offset: 2px;
       }
+
+      @media screen and (min-width: 1280px) {
+        font-weight: 700;
+      }
     }
   }
-  &.is-hidden {
-    display: none;
+  &.is-open {
+    position: absolute;
+    top: 75%;
+    right: 20px;
+    width: 130px;
+    overflow: hidden;
+    @include flexbox(flex, center, flex-start, column);
+    background-color: var(--bg-color);
+    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+    border-radius: 30px 0px 30px 30px;
   }
+}
+
+.menu__icon {
+  width: 28px;
+  height: 28px;
+  fill: var(--border-color);
 }
 
 .menu__btn {
@@ -89,11 +108,12 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-}
 
-.menu__icon {
-  width: 28px;
-  height: 28px;
+  &:hover .menu__icon,
+  &:focus .menu__icon,
+  &:active .menu__icon {
+    fill: var(--subscribe-color);
+  }
 }
 
 .close__icon {

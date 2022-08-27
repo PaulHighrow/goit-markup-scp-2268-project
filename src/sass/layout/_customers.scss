@@ -31,13 +31,13 @@
 
 .customers__list {
   @media screen and (min-width: 768px) {
-    text-align: center;
     justify-content: center;
     display: flex;
     gap: 30px;
   }
 
   @media screen and (min-width: 1280px) {
+    justify-content: flex-start;
     gap: 139px;
   }
 }

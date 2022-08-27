@@ -130,21 +130,21 @@
 .swiper .swiper-button-prev,
 .swiper .swiper-button-next {
   @media screen and (min-width: 768px) {
-    width: 28px;
-    height: 34px;
+    width: 34px;
+    height: 28px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   }
 
   @media screen and (min-width: 1280px) {
-    width: 40px;
-    height: 48px;
+    width: 48px;
+    height: 40px;
   }
 }
 
 .swiper .swiper-button-disabled {
-opacity: 1;
+  opacity: 1;
 }
 
 .swiper .swiper-button-prev:active,
