@@ -1,25 +1,62 @@
 <section>
-  <div class="container">
-    <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
-    <p class="subscribe__text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      varius enim in eros elementum tristique.
-    </p>
-    <form class="subscribe__form">
-      <label class="subscribe__label">
-        <input
-          class="subscribe__input"
-          type="email"
-          name="mail"
-          placeholder=" Enter your email"
-        />
-      </label>
-      <button class="btn" type="button">Subscribe</button>
-    </form>
-    <img
-      class="subscribe-img"
-      src="./images/png/banana-pc@1x-546.png"
-      alt="banana"
-    />
+  <div class="container subscribe">
+    <picture>
+      <source
+        srcset="
+          ./images/png/banana-pc@1x-546.png  1x,
+          ./images/png/banana-pc@2x-1092.png 2x
+        "
+        media="(min-width: 1200px)"
+        type="images/png"
+      />
+      <source
+        srcset="
+          ./images/png/banana-tablet@1x-281.png 1x,
+          ./images/png/banana-tablet@2x-562.png 2x
+        "
+        media="(min-width: 768px)"
+        type="images/png"
+      />
+      <source
+        srcset="./images/png/banana-mobile@2x-322.png 2x"
+        media="(max-width: 767px)"
+        type="images/png"
+      />
+
+      <img
+        class="subscribe__img"
+        src="./images/png/banana-mobile@1x-161.png"
+        alt="banana"
+        width="280"
+      />
+    </picture>
+    <div class="subscribe__group">
+      <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
+      <p class="subscribe__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique.
+      </p>
+      <form class="subscribe__form">
+        <label class="subscribe__label">
+          <input
+            class="subscribe__input"
+            type="email"
+            name="mail"
+            placeholder=" Enter your email"
+            required
+          />
+        </label>
+        <button class="subscribe__btn" type="button">Subscribe</button>
+      </form>
+
+      <div class="form__invalid">
+        <svg class="form__invalid__icon" width="12" height="12">
+          <use href="./images/svg/backup/frame.svg#icon-Frame"></use>
+        </svg>
+        <p class="form__invalid__text">
+          Not a valid email address (example@email.com)
+        </p>
+      </div>
+    </div>
   </div>
 </section>
