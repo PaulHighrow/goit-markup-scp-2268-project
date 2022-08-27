@@ -1,22 +1,32 @@
 // Hero style
 .hero {
-    display: flex;
-    // background-color: red;
+    padding-top: 60px;
+    padding-bottom: 50px;
+
+    @media screen and (min-width: 768px) { 
+    padding-bottom: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+            padding-top: 14px;
+        }
+
+    @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: auto;
+        }
 
     &__list {
-        padding-top: 60px;
-        padding-bottom: 50px;
+        
         @media screen and (min-width: 768px) {
-            padding-bottom: 0;
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin-right: auto;
             }
-        
-        @media screen and (min-width: 1200px) {
-            padding-top: 0;
-        }
+
     }
 
     &__item:first-child {
@@ -111,12 +121,17 @@
     object-fit: cover;
 }
 
-.swiper-pagination-bullet-active {
-    background-image: url(https://picsum.photos/200);
-    background-size: cover;
-    border-radius: unset;
+.swiper-pagination-bullet {
     width: 20px;
     height: 20px;
+}
+
+.swiper .swiper-pagination-bullet-active {
+    background-color: var(--button-color);
+    line-height: 20px;
+    font-size: 14px;
+    width: 10px;
+    height: 10px;
 }
 
  

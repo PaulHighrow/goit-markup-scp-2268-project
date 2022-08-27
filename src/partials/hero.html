@@ -25,13 +25,37 @@
               </button>
               <div class="swiper-wrapper">
                 <div class="swiper-slide customer-item">
-                  <img class="swiper-slide__img" src="./images/foto.jpg" alt="Блюдо 1" width="528" height="528">
+                  <img class="swiper-slide__img" 
+                  srcset="
+                  ./images/slider/slider-1@1x-292.jpg 292w,
+                  ./images/slider/slider-1@1x-528.jpg 528w,
+                  ./images/slider/slider-1@2x-584.jpg 584w,
+                  ./images/slider/slider-1@2x-1056.jpg 1056w
+                  "
+                  sizes="(min-width: 1200px) 528px, (min-width: 768px) 292px, 100vw"
+                  src="./images/foto.jpg" alt="Блюдо 1" width="528" height="528">
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiper-slide__img" src="./images/foto3.png" alt="Блюдо 2" width="528" height="528">
+                  <img class="swiper-slide__img"
+                  srcset="
+                  ./images/slider/slider-2@1x-292.jpg 292w,
+                  ./images/slider/slider-2@1x-528.jpg 528w,
+                  ./images/slider/slider-2@2x-584.jpg 584w,
+                  ./images/slider/slider-2@2x-1056.jpg 1056w
+                  "
+                  sizes="(min-width: 1200px) 528px, (min-width: 768px) 292px, 100vw" 
+                  src="./images/foto3.png" alt="Блюдо 2" width="528" height="528">
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiper-slide__img" src="./images/foto4.png" alt="Блюдо 3" width="528" height="528">
+                  <img class="swiper-slide__img" 
+                  srcset="
+                  ./images/slider/slider-3@1x-292.jpg 292w,
+                  ./images/slider/slider-3@1x-528.jpg 528w,
+                  ./images/slider/slider-3@2x-584.jpg 584w,
+                  ./images/slider/slider-3@2x-1056.jpg 1056w
+                  "
+                  sizes="(min-width: 1200px) 528px, (min-width: 768px) 292px, 100vw"
+                  src="./images/foto4.png" alt="Блюдо 3" width="528" height="528">
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -40,5 +64,3 @@
       </ul>
     </div>
   </section>
-</body>
-</html>
