@@ -40,15 +40,23 @@
     }
   }
 
+  &__item {
+  }
+
   &__link {
+    flex-grow: 0;
     color: var(--main-color);
     transition: color var(--animation-global),
-      text-decoration-line var(--animation-global);
+      text-shadow var(--animation-global);
 
     &:hover,
     &:focus {
+      text-decoration: underline;
       color: var(--button-color);
-      text-decoration-line: underline;
+      text-underline-offset: 2px;
+
+      text-shadow: 0 0 0.4px var(--button-color), 0 0 0.4px var(--button-color),
+        0 0 0.4px var(--button-color);
     }
   }
 }
