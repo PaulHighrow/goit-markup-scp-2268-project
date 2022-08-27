@@ -1,10 +1,11 @@
 .customers {
     margin: 0 auto;
-    max-width: 480px;
+   
     padding-top: 60px;
     padding-bottom: 54px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: left bottom;
     background-image: url(../images/bg/bg-bottom-mobile@1x-320.png);
 
     @media (min-device-pixel-ratio: 2),
@@ -34,14 +35,14 @@
     }
 
     @media screen and (min-width:768px) {
-        max-width: 786px;
+       
         padding-top: 59px;
         padding-bottom: 115px;
 
     }
 
     @media screen and (min-width:1280px) {
-        max-width: 1280px;
+        max-width: 1600px;
         padding-top: 100px;
         padding-bottom: 213px;
     }
