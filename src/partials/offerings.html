@@ -1,5 +1,73 @@
-<section>
-    <div class="container">
-        
+<section class="offerings">
+  <div class="offerings__content container">
+    <div class="offerings__size">
+      <picture class="offerings__product">
+        <source
+          srcset="
+            ./images/png/apple-pc@1x-550.png  1x,
+            ./images/png/apple-pc@2x-1100.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/png/apple-tablet@1x-704.png  1x,
+            ./images/png/apple-tablet@2x-1408.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/png/apple-mobile@1x-280.png 1x,
+            ./images/png/apple-mobile@2x-560.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          class="offerings__pic"
+          src="./images/png/apple-mobile@2x-560.png"
+          alt="apple"
+        />
+      </picture>
     </div>
+    <div class="offerings__field">
+      <div class="offerings__thumb">
+        <h1 class="offerings__title">What’s Special About Our Offerings</h1>
+        <p class="offerings__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+          ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+        </p>
+      </div>
+      <ul class="offerings__list">
+        <li class="offerings__item offerings__rocket">
+          <h3 class="offerings__slogan">Fastest Delivery</h3>
+          <p class="offerings__subject">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </li>
+        <li class="offerings__item offerings__touch">
+          <h3 class="offerings__slogan">Easy to order</h3>
+          <p class="offerings__subject">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </li>
+      </ul>
+      <div class="offerings__options">
+        <button type="button" class="offerings__button">Order Now</button>
+        <a
+          class="offerings__link"
+          href=""
+          target="_blank"
+          rel="noopener noreferrer"
+          >Read More
+          <svg class="offerings__more">
+            <use href="./images/svg/icons.svg#more"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
