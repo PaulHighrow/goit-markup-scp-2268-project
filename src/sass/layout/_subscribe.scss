@@ -1,19 +1,41 @@
 .subscribe {
   position: relative;
+  padding-bottom: 60px;
+  margin-top: 52px;
   @media screen and (min-width: 1280px) {
     display: flex;
-    flex-direction: row-reverse;
+
+    // flex-direction: row-reverse;
   }
 
   &__img {
-    // margin-bottom: 17px;
+    position: absolute;
+
     @media screen and (max-width: 767px) {
+      padding-left: 50%;
+      transform: translateX(-25%);
+      top: -110px;
+
       margin-left: auto;
       margin-right: auto;
+      margin-bottom: 17px;
     }
 
     @media screen and (min-width: 768px) {
       margin-left: auto;
+      top: -122px;
+      right: 0;
+    }
+
+    @media screen and (min-width: 1280px) {
+      top: -150px;
+      right: 0;
+    }
+  }
+
+  &__group {
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      margin-top: 50px;
     }
   }
 
@@ -31,6 +53,7 @@
   }
 
   &__text {
+    min-width: 280px;
     margin-bottom: 40px;
     color: var(--main-color);
     font-weight: 400;
@@ -38,6 +61,7 @@
     line-height: 1.4;
 
     @media screen and (min-width: 768px) {
+      width: 656px;
       margin-bottom: 24px;
       font-size: 16px;
       line-height: 1.5;
@@ -50,13 +74,23 @@
 
       flex-direction: column;
       // align-items: flex-end;
-      position: absolute;
+
       // gap: 20px;
+    }
+
+    text-align: end;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: flex-start;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
     }
   }
 
   &__input {
-    outline: #fff;
+    outline: var(--bg-color);
     min-width: 278px;
     height: 42px;
     border: 1px solid var(--subscribe-color);
@@ -83,7 +117,7 @@
       border-color: var(--warning-color);
     }
 
-    &:not(:placeholder-shown):required:invalid .form__invalid {
+    &:not(:placeholder-shown):required:invalid + .form__invalid {
       opacity: 1;
     }
   }
@@ -107,10 +141,14 @@
   }
 }
 
+// класс дива
 .form__invalid {
   opacity: 0;
-
-  display: flex;
+  // @media screen and(max-width: 767px) {
+  //   position: absolute;
+  //   bottom: -100px;
+  // }
+  // display: flex;
   gap: 4px;
   margin-top: 4px;
 
@@ -121,3 +159,83 @@
     color: var(--warning-color);
   }
 }
+
+// cтилі ніка
+
+// .subscribe__form {
+//   @media screen and (min-width: 768px) {
+//   }
+// }
+// .subscribe__form__input {
+//   width: 100%;
+//   height: 42px;
+//   border-radius: 30px;
+//   color: var(--main-color);
+//   padding: 12px 12px;
+//   padding-left: 18px;
+//   border: 1px solid var(--subscribe-color);
+//   outline: transparent;
+//   &:invalid:not(:placeholder-shown) {
+//     border: 1px solid var(--warning-color);
+//   }
+//   &:valid:not(:placeholder-shown) {
+//     border: 1px solid var(--border-color);
+//   }
+//   @media screen and (min-width: 768px) {
+//     width: 394px;
+//   }
+//   &::placeholder {
+//     font-weight: 400;
+//     font-size: 12px;
+//     line-height: calc(18 / 12);
+//     color: var(--main-color);
+//     letter-spacing: 0.03em;
+//     padding-top: 15px;
+//     padding-bottom: 15px;
+//   }
+// }
+// .subscribe__form__input:invalid:not(:placeholder-shown)
+//   ~ .subscribe__form__title {
+//   opacity: 1;
+// }
+// .subscribe__form__title {
+//   display: inline-flex;
+//   align-items: center;
+//   width: 100%;
+//   margin-top: 4px;
+//   opacity: 0;
+// }
+// .subscribe__form__text__error {
+//   font-size: 10px;
+//   line-height: calc(15 / 10);
+//   margin-left: 4px;
+
+//   color: var(--warning-color);
+// }
+// .subscribe__form__icon {
+//   text-align: center;
+// }
+// .subscribe__form__btn {
+//   min-width: 103px;
+//   padding: 10px 20px;
+//   background-color: var(--button-color);
+//   border: none;
+//   border-radius: 30px;
+
+//   transition: background-color var(--animation-global);
+//   &:hover,
+//   &:focus {
+//     background-color: var(--button-hover-color);
+//   }
+// }
+// .subscribe__form__btn {
+//   margin-top: 20px;
+//   @media screen and (min-width: 768px) {
+//     margin-top: 0px;
+//     margin-left: 18px;
+//   }
+//   @media screen and (min-width: 1280px) {
+//     margin-left: 32px;
+//     margin-bottom: 0px;
+//   }
+// }
