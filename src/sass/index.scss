@@ -1,4 +1,3 @@
-
 // Utils styles
 @import './utils/vars';
 @import './utils/visually-hidden';
@@ -12,9 +11,22 @@
 
 // Components styles
 @import './components/container';
+@import './components/nav';
 @import './components/button';
+@import './components/backdrop';
+@import './components/modal';
 
-// layout styles
+// Layout styles
 @import './layout/header';
 @import './layout/hero';
+
 @import './layout/footer';
+
+@import './layout/offerings';
+@import './layout/customers';
+@import './layout/subscribe';
+@import './layout/form';
+
+// Vendor styles
+@import './vendor/vendor';
+

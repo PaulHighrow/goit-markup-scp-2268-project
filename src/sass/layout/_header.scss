@@ -1,4 +1,7 @@
 .header {
+  // position: fixed;
+  background-color: var(--bg-color);
+  width: 100vw;
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
   padding: 10px 0;
 
@@ -6,6 +9,12 @@
     position: relative;
     @media screen and (min-width: 768px) {
       @include flexbox(flex, center, center, row);
+    }
+  }
+
+  &__logo {
+    @media screen and (min-width: 768px) {
+      margin-right: auto;
     }
   }
 
@@ -23,37 +32,15 @@
 .logo {
   width: 66px;
   height: 52px;
-  @media screen and (min-width: 768px) {
-    margin-right: auto;
-  }
 }
 
-.nav {
-  &__list {
-    display: none;
-
-    @media screen and (min-width: 768px) {
-      display: block;
-      gap: 28px;
-      @include flexbox(flex, center, center, row);
-      margin-right: 28px;
-    }
-  }
-
-  &__link {
-    color: var(--main-color);
-    transition: color var(--animation-global),
-      text-decoration-line var(--animation-global);
-
-    &:hover,
-    &:focus {
-      color: var(--button-color);
-      text-decoration-line: underline;
-    }
-  }
+.menu__icon {
+  width: 28px;
+  height: 28px;
+  fill: var(--border-color);
 }
 
-.menu__btn {
+.menu {
   background-color: transparent;
   border: none;
   padding: 0;
@@ -66,9 +53,30 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+
+  &:hover .menu__icon,
+  &:focus .menu__icon,
+  &:active .menu__icon {
+    fill: var(--subscribe-color);
+  }
 }
 
-.menu__icon {
-  width: 28px;
-  height: 28px;
+.close__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.close {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
