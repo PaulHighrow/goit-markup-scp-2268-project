@@ -6,7 +6,7 @@
     width: 100%;
     margin-bottom: 8px;
 
-    @include font(22, null, 33);
+    @include font(22px, null, 33px);
 
     text-align: center;
 
@@ -44,11 +44,11 @@
   &__text {
     display: block;
     margin-bottom: 1px;
-    @include font(12, 400, 18);
+    @include font(12px, 400, 18px);
     color: var(--form-color);
 
     @media screen and (min-width: 480px) {
-      @include font(14, 400, 21);
+      @include font(14px, 400, 21px);
       margin-bottom: 4px;
     }
   }

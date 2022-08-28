@@ -1,5 +1,5 @@
-<section id="subscribe">
-  <div class="container subscribe">
+<section class="subscribe" id="subscribe">
+  <div class="container subscribe__container">
     <picture class="subscribe__img">
       <source
         srcset="
@@ -24,34 +24,32 @@
       />
       <img src="./images/png/banana-mobile@2x-322.png" alt="banana" />
     </picture>
+    <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
+    <p class="subscribe__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      varius enim in eros elementum tristique.
+    </p>
 
-    <div class="subscribe__group">
-      <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
-      <p class="subscribe__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        varius enim in eros elementum tristique.
-      </p>
-
-      <form class="subscribe__form">
-        <label class="subscribe__label">
-          <input
-            class="subscribe__input"
-            type="email"
-            name="mail"
-            placeholder=" Enter your email"
-            required
-          />
-        </label>
-        <div class="subscribe__invalid">
-          <svg class="subscribe__icon" width="12" height="12">
-            <use href="./images/svg/backup/frame.svg#frame"></use>
+    <form class="subscribe__form">
+      <label class="subscribe__label">
+        <input
+          class="subscribe__input"
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+          pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+        />
+        <div class="warning warning--subscribe">
+          <svg class="warning__icon" width="11" height="11">
+            <use href="./images/svg/icons.svg#warning"></use>
           </svg>
-          <span class="form__invalid__text">
-            Not a valid email address (example@email.com)
-          </span>
+          <span class="warning__text"
+            >Not a valid email address (example@email.com)</span
+          >
         </div>
-      </form>
-      <button class="subscribe__btn" type="submit">Subscribe</button>
-    </div>
+      </label>
+      <button class="btn btn--subscribe" type="submit">Subscribe</button>
+    </form>
   </div>
 </section>

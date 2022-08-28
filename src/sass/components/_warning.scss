@@ -17,4 +17,9 @@
   &__text {
     @include font(10px, 400, 15px);
   }
+
+  &--subscribe {
+    bottom: -16px;
+    left: 0;
+  }
 }

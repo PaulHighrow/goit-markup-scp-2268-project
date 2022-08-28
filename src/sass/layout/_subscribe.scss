@@ -1,111 +1,96 @@
 .subscribe {
-  position: relative;
+  padding-top: 52px;
   padding-bottom: 60px;
-  margin-top: 52px;
-  @media screen and (min-width: 1280px) {
-    display: flex;
 
-    // flex-direction: row-reverse;
+  @media screen and (min-width: 768px) {
+    padding-top: 82px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 0;
+  }
+
+  &__container {
+    position: relative;
   }
 
   &__img {
     position: absolute;
 
     @media screen and (max-width: 767px) {
-      padding-left: 50%;
-      transform: translateX(-25%);
-      top: -110px;
-
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 17px;
+      top: -95px;
+      right: 50%;
+      transform: translateX(50%);
     }
 
     @media screen and (min-width: 768px) {
-      margin-left: auto;
-      top: -122px;
+      top: -155px;
       right: 0;
     }
 
     @media screen and (min-width: 1280px) {
-      top: -150px;
+      top: -65px;
       right: 0;
     }
   }
 
-  &__group {
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-      margin-top: 50px;
-    }
-  }
-
   &__title {
-    color: var(--main-color);
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.21;
+    @include font(28px, 700, 34px);
     margin-bottom: 20px;
 
     @media screen and (min-width: 768px) {
-      font-size: 42px;
-      line-height: 1.19;
+      @include font(42px, 700, 50px);
     }
   }
 
   &__text {
-    min-width: 280px;
     margin-bottom: 40px;
-    color: var(--main-color);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.4;
+    @include font(14px, 400, 16px);
 
     @media screen and (min-width: 768px) {
-      width: 656px;
       margin-bottom: 24px;
-      font-size: 16px;
-      line-height: 1.5;
+      @include font(16px, 400, 24px);
+    }
+
+    @media screen and (min-width: 1280px) {
+      max-width: 656px;
     }
   }
 
   &__form {
-    display: inline;
-    @media screen and (max-width: 767px) {
-      flex-direction: column;
-      // align-items: flex-end;
-
-      // gap: 20px;
-
-      // text-align: end;
+    @media screen and (min-width: 768px) {
+      display: flex;
     }
-    // @media screen and (min-width: 768px) {
-    //   display: flex;
-    //   align-items: flex-start;
-    // }
-    // @media screen and (min-width: 768px) {
-    //   display: flex;
-    //   align-items: center;
-    // }
   }
 
-  &__input {
-    outline: var(--bg-color);
-    min-width: 278px;
-    height: 42px;
-    border: 1px solid var(--subscribe-color);
-    border-radius: 30px;
-    padding-left: 11px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.5;
+  &__label {
+    display: block;
+    position: relative;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
 
     @media screen and (min-width: 768px) {
-      width: 394px;
       margin-right: 22px;
     }
 
     @media screen and(min-width: 1280px) {
       margin-right: 32px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    // height: 42px;
+    border: 1px solid var(--subscribe-color);
+    outline: transparent;
+    border-radius: 30px;
+    padding: 11px 12px;
+    @include font(12px, 400, 18px);
+
+    @media screen and (min-width: 768px) {
+      width: 395px;
     }
 
     &:not(:placeholder-shown):required:valid {
@@ -116,124 +101,8 @@
       border-color: var(--warning-color);
     }
 
-    &:not(:placeholder-shown):required:invalid + .form__invalid {
+    &:not(:placeholder-shown):required:invalid + .warning--subscribe {
       opacity: 1;
     }
   }
-
-  &__btn {
-    display: block;
-    margin-left: auto;
-    padding: 11px 22px;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 1.5;
-    color: var(--main-color);
-    background-color: var(--button-color);
-    border: 1px solid transparent;
-    border-radius: 30px;
-    cursor: pointer;
-  }
-
-  &__btn:hover,
-  &__btn:focus {
-    background-color: var(--button-hover-color);
-  }
 }
-
-.subscribe__invalid {
-  // opacity: 0;
-  // @media screen and(max-width: 767px) {
-  //   position: absolute;
-  //   bottom: -100px;
-  // }
-  display: flex;
-  gap: 4px;
-  margin-top: 4px;
-}
-.subscribe__invalid__text {
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 150%;
-  color: var(--warning-color);
-}
-
-// cтилі ніка
-
-// .subscribe__form {
-//   @media screen and (min-width: 768px) {
-//   }
-// }
-// .subscribe__form__input {
-//   width: 100%;
-//   height: 42px;
-//   border-radius: 30px;
-//   color: var(--main-color);
-//   padding: 12px 12px;
-//   padding-left: 18px;
-//   border: 1px solid var(--subscribe-color);
-//   outline: transparent;
-//   &:invalid:not(:placeholder-shown) {
-//     border: 1px solid var(--warning-color);
-//   }
-//   &:valid:not(:placeholder-shown) {
-//     border: 1px solid var(--border-color);
-//   }
-//   @media screen and (min-width: 768px) {
-//     width: 394px;
-//   }
-//   &::placeholder {
-//     font-weight: 400;
-//     font-size: 12px;
-//     line-height: calc(18 / 12);
-//     color: var(--main-color);
-//     letter-spacing: 0.03em;
-//     padding-top: 15px;
-//     padding-bottom: 15px;
-//   }
-// }
-// .subscribe__form__input:invalid:not(:placeholder-shown)
-//   ~ .subscribe__form__title {
-//   opacity: 1;
-// }
-// .subscribe__label {
-//   display: inline-flex;
-//   align-items: center;
-//   width: 100%;
-//   margin-top: 4px;
-//   opacity: 0;
-// }
-// .subscribe__form__text__error {
-//   font-size: 10px;
-//   line-height: calc(15 / 10);
-//   margin-left: 4px;
-
-//   color: var(--warning-color);
-// }
-// .form__icon {
-//   text-align: center;
-// }
-// .subscribe__btn {
-//   min-width: 103px;
-//   padding: 10px 20px;
-//   background-color: var(--button-color);
-//   border: none;
-//   border-radius: 30px;
-
-//   transition: background-color var(--animation-global);
-//   &:hover,
-//   &:focus {
-//     background-color: var(--button-hover-color);
-//   }
-// }
-// .subscribe__btn {
-//   margin-top: 20px;
-//   @media screen and (min-width: 768px) {
-//     margin-top: 0px;
-//     margin-left: 18px;
-//   }
-//   @media screen and (min-width: 1280px) {
-//     margin-left: 32px;
-//     margin-bottom: 0px;
-//   }
-// }

@@ -16,4 +16,13 @@
   &--form {
     @include font(16px, 700, 25px);
   }
+
+  &--subscribe {
+    display: block;
+    padding: 11px 22px;
+
+    @media screen and (max-width: 767px) {
+      margin-left: auto;
+    }
+  }
 }
