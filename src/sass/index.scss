@@ -3,6 +3,7 @@
 @import './utils/visually-hidden';
 @import './utils/mixin';
 @import './utils/animations';
+@import './utils/no-scroll';
 
 // Base styles
 @import './base/common';
@@ -27,4 +28,3 @@
 
 // Vendor styles
 @import './vendor/vendor';
-
