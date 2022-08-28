@@ -4,9 +4,6 @@
 @import './utils/mixin';
 @import './utils/animations';
 
-// Vendor styles
-@import './vendor/vendor';
-
 // Base styles
 @import './base/common';
 @import './base/resets';
@@ -16,10 +13,16 @@
 @import './components/container';
 @import './components/nav';
 @import './components/button';
+@import './components/backdrop';
+@import './components/modal';
 
-// layout styles
+// Layout styles
 @import './layout/header';
 @import './layout/hero';
 @import './layout/offerings';
 @import './layout/customers';
 @import './layout/subscribe';
+@import './layout/form';
+
+// Vendor styles
+@import './vendor/vendor';

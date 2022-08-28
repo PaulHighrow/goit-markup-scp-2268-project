@@ -1,0 +1,59 @@
+<div class="modal" modal>
+  <!-- Кнопка закрытия модального окна -->
+  <button class="close-btn" type="button" modal-close>
+    <svg class="close-btn__icon">
+      <use href="./images/svg/icons.svg#close"></use>
+    </svg>
+  </button>
+
+  <!-- Форма модального окна -->
+  <form class="form">
+    <strong class="form__title">Enter Delivery Address</strong>
+    <div class="form__group" role="group">
+      <label class="form__label">
+        <span class="form__text">Your name</span>
+        <input class="form__input" type="text" name="name" required />
+        <svg class="form__icon">
+          <use href="./images/svg/icons.svg#pacman"></use>
+        </svg>
+      </label>
+      <label class="form__label">
+        <span class="form__text">Phone number</span>
+        <input class="form__input" type="tel" name="phone-number" required />
+        <svg class="form__icon">
+          <use href="./images/svg/icons.svg#phone"></use>
+        </svg>
+      </label>
+      <label class="form__label">
+        <span class="form__text">Email</span>
+        <input class="form__input" type="email" name="email" required />
+        <svg class="form__icon">
+          <use href="./images/svg/icons.svg#envelope"></use>
+        </svg>
+      </label>
+      <label class="form__label">
+        <span class="form__text">Street Address</span>
+        <input class="form__input" type="text" name="address" required />
+        <svg class="form__icon">
+          <use href="./images/svg/icons.svg#location"></use>
+        </svg>
+      </label>
+      <label class="form__label">
+        <span class="form__text">Your notes</span>
+        <textarea
+          class="form__textarea"
+          name="comment"
+          rows="6"
+          placeholder="Notes for your order"
+        ></textarea>
+      </label>
+    </div>
+    <button
+      class="btn btn--form"
+      type="submit"
+      data-tooltip="̶P̶̑͜l̵̈ͅĕ̸̢á̸̤s̶̲̍e̶͓͛ ̷̡̃i̶̩͗n̷̺̕s̷͈̊ë̷͉́r̶̬͌t̷̰͐ ̸̩͗b̷̪̎r̶̼̉ẹ̷̽ạ̷͆d̶͚̀ ̶̠̐i̸͉͘n̵̖̚ ̴̳͑y̶̜͒ọ̵̓ú̴̹r̸͈͆ ̸͉̈́d̴̙̎ȋ̴̬s̴̿͜c̷̻̄ ̷̖̀d̴͉̾r̶̞͌i̶̙̊v̷̞̇è̵͜"
+    >
+      Submit
+    </button>
+  </form>
+</div>

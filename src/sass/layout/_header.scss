@@ -12,6 +12,12 @@
     }
   }
 
+  &__logo {
+    @media screen and (min-width: 768px) {
+      margin-right: auto;
+    }
+  }
+
   &__btn {
     display: none;
     padding: 6px 17px;
@@ -26,9 +32,6 @@
 .logo {
   width: 66px;
   height: 52px;
-  @media screen and (min-width: 768px) {
-    margin-right: auto;
-  }
 }
 
 .menu__icon {
@@ -37,7 +40,7 @@
   fill: var(--border-color);
 }
 
-.menu__btn {
+.menu {
   background-color: transparent;
   border: none;
   padding: 0;
@@ -63,7 +66,7 @@
   height: 24px;
 }
 
-.close__btn {
+.close {
   background-color: transparent;
   border: none;
   padding: 0;

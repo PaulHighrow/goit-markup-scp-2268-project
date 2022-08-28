@@ -1,11 +1,18 @@
 <header class="header">
   <div class="container header__container">
-    <svg class="logo">
-      <use href="./images/svg/icons.svg#logo"></use>
-    </svg>
+    <a
+      class="header__logo"
+      href="https://github.com/PaulHighrow/goit-markup-scp-2268-project"
+      rel="noopener noreferrer"
+      aria-label="FoodSta"
+    >
+      <svg class="logo">
+        <use href="./images/svg/icons.svg#logo"></use>
+      </svg>
+    </a>
     <nav class="nav" nav-mobile>
-      <button class="close__btn" type="button" close-button>
-        <svg class="close__icon">
+      <button class="close" type="button" close-button>
+        <svg class="close__icon" aria-label="Mobile menu switch">
           <use href="./images/svg/icons.svg#close"></use>
         </svg>
       </button>
@@ -15,9 +22,9 @@
       <a class="nav__link" href="#favorites">Menu</a>
       <a class="nav__link" href="#subscribe">Contact</a>
     </nav>
-    <button class="btn header__btn" type="button">Order Now</button>
-    <button class="menu__btn" type="button" open-button>
-      <svg class="menu__icon">
+    <button class="btn header__btn" type="button" modal-open>Order Now</button>
+    <button class="menu" type="button" open-button>
+      <svg class="menu__icon" aria-label="Mobile menu switch">
         <use href="./images/svg/icons.svg#menu"></use>
       </svg>
     </button>

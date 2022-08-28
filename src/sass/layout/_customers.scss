@@ -4,11 +4,11 @@
 
 .customers__container {
   padding-top: 60px;
-  padding-bottom: 54px;
+  padding-bottom: 60px;
 
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left bottom;
+
   background-image: url(../images/bg/bg-mobile-bottom.svg);
 
   @media screen and (min-width: 768px) {
@@ -19,13 +19,13 @@
   }
 
   @media screen and (min-width: 768px) {
-    padding-top: 59px;
-    padding-bottom: 115px;
+    padding-top: 60px;
+    padding-bottom: 120px;
   }
 
   @media screen and (min-width: 1280px) {
     padding-top: 100px;
-    padding-bottom: 213px;
+    padding-bottom: 200px;
   }
 }
 
