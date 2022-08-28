@@ -1,6 +1,6 @@
 <section id="subscribe">
   <div class="container subscribe">
-    <picture>
+    <picture class="subscribe__img">
       <source
         srcset="
           ./images/png/banana-pc@1x-546.png  1x,
@@ -22,11 +22,7 @@
         "
         media="(max-width: 767px)"
       />
-      <img
-        class="subscribe__img"
-        src="./images/png/banana-mobile@2x-322.png"
-        alt="banana"
-      />
+      <img src="./images/png/banana-mobile@2x-322.png" alt="banana" />
     </picture>
 
     <div class="subscribe__group">
@@ -35,6 +31,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         varius enim in eros elementum tristique.
       </p>
+
       <form class="subscribe__form">
         <label class="subscribe__label">
           <input
@@ -45,16 +42,17 @@
             required
           />
         </label>
+        <div class="form__invalid">
+          <svg class="form__icon" width="12" height="12">
+            <use href="./images/svg/backup/frame.svg#frame"></use>
+          </svg>
+          <span
+            >class="form__invalid__text"> Not a valid email address
+            (example@email.com)
+          </span>
+        </div>
         <button class="subscribe__btn" type="button">Subscribe</button>
       </form>
-      <div class="form__invalid">
-        <svg class="form__invalid__icon" width="12" height="12">
-          <use href="./images/svg/backup/frame.svg#frame"></use>
-        </svg>
-        <p class="form__invalid__text">
-          Not a valid email address (example@email.com)
-        </p>
-      </div>
     </div>
   </div>
 </section>
