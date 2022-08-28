@@ -2,6 +2,7 @@
   position: relative;
   padding-bottom: 60px;
   margin-top: 52px;
+
   @media screen and (min-width: 1280px) {
     display: flex;
 
@@ -94,7 +95,7 @@
     height: 42px;
     border: 1px solid var(--subscribe-color);
     border-radius: 30px;
-    padding-left: 11px;
+    padding-left: 18px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.5;
@@ -133,6 +134,11 @@
     border: 1px solid transparent;
     border-radius: 30px;
     cursor: pointer;
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      left: 440px;
+      top: 140px;
+    }
   }
 
   &__btn:hover,
