@@ -1,9 +1,31 @@
 .header {
+  // position: fixed;
+  background-color: var(--bg-color);
+  width: 100vw;
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
   padding: 10px 0;
 
   &__container {
     position: relative;
+    @media screen and (min-width: 768px) {
+      @include flexbox(flex, center, center, row);
+    }
+  }
+
+  &__logo {
+    @media screen and (min-width: 768px) {
+      margin-right: auto;
+    }
+  }
+
+  &__btn {
+    display: none;
+    padding: 6px 17px;
+    @include font(14px, 400, 21px);
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
   }
 }
 
@@ -12,11 +34,49 @@
   height: 52px;
 }
 
-.menu {
+.menu__icon {
   width: 28px;
   height: 28px;
+  fill: var(--border-color);
+}
+
+.menu {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 20px;
   transform: translateY(-50%);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &:hover .menu__icon,
+  &:focus .menu__icon,
+  &:active .menu__icon {
+    fill: var(--subscribe-color);
+  }
+}
+
+.close__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.close {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
