@@ -12,4 +12,8 @@
   &:focus {
     background-color: var(--button-hover-color);
   }
+
+  &--form {
+    @include font(16px, 700, 25px);
+  }
 }
