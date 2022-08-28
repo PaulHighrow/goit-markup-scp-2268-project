@@ -5,9 +5,9 @@
 */
 
 (() => {
-  const navOpenBtn = document.querySelector('[open-button]');
-  const navCloseBtn = document.querySelector('[close-button]');
-  const navMobile = document.querySelector('[nav-mobile]');
+  const navOpenBtn = document.querySelector('[data-menu-open]');
+  const navCloseBtn = document.querySelector('[data-menu-close]');
+  const navMobile = document.querySelector('[data-nav-mobile]');
 
   navOpenBtn.addEventListener('click', toggleNav);
   navCloseBtn.addEventListener('click', toggleNav);

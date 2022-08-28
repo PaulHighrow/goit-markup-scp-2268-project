@@ -18,7 +18,7 @@
     height: 100%;
     color: var(--main-color);
     transition: color var(--animation-global),
-      font-weight var(--animation-global);
+      text-shadow var(--animation-global);
 
     @media screen and (min-width: 768px) {
       padding: 0;
@@ -32,14 +32,16 @@
       }
 
       @media screen and (min-width: 768px) {
-        font-weight: 500;
+        text-shadow: 0 0 0.4px var(--button-color),
+          0 0 0.4px var(--button-color), 0 0 0.4px var(--button-color);
         text-decoration: underline;
         color: var(--button-color);
         text-underline-offset: 2px;
       }
 
       @media screen and (min-width: 1280px) {
-        font-weight: 700;
+        text-shadow: 0 0 0.55px var(--button-color),
+          0 0 0.55px var(--button-color), 0 0 0.55px var(--button-color);
       }
     }
   }
