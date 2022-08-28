@@ -1,4 +1,12 @@
 .offerings {
+  @media screen and (min-width: 768px) {
+      padding-top: 370px;
+    }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 450px;
+  }
+  
   &__content {
     background-repeat: no-repeat;
     background-size: cover;

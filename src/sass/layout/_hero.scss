@@ -4,8 +4,12 @@
   padding-bottom: 50px;
 
   @media screen and (min-width: 768px) {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
     padding-bottom: 0;
   }
+  
 
   @media screen and (min-width: 1280px) {
     padding-top: 14px;
@@ -36,6 +40,13 @@
   &__item:last-child {
     position: relative;
     display: none;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      position: absolute;
+      right: 32px;
+      top: 150;
+    }
+
     @media screen and (min-width: 768px) {
       display: flex;
       margin-top: auto;
@@ -57,13 +68,13 @@
 
     @media screen and (min-width: 768px) {
       flex-shrink: 0;
-      min-width: 336px;
+      max-width: 537px;
       margin-bottom: 44px;
       @include font(42px, null, 50px);
     }
 
     @media screen and (min-width: 1280px) {
-      min-width: 503px;
+      max-width: 503px;
       @include font(48px, null, 58px);
     }
   }
@@ -75,7 +86,7 @@
     @include font(14px, 400, 21px);
     color: var(--main-color, #2c2c2c);
     @media screen and (min-width: 768px) {
-      min-width: 336px;
+      max-width: 336px;
       margin-bottom: 40px;
       @include font(16px, null, 24px);
     }
