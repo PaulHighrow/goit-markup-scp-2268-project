@@ -1,4 +1,12 @@
 .offerings {
+  //  @media screen and (min-width: 768px) {
+  //    padding-top: 370px;
+  //}
+  //
+  //@media screen and (min-width: 1280px) {
+  //padding-top: 450px;
+  //}
+
   &__content {
     background-repeat: no-repeat;
     background-size: cover;
@@ -120,7 +128,7 @@
     color: #000000;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1, 5;
+    line-height: 1.5;
     @media screen and (min-width: 1280px) {
       display: none;
     }
@@ -130,13 +138,14 @@
     margin-right: 24px;
     font-weight: 500;
     font-size: 13px;
-    line-height: 1, 5;
+    line-height: 1.5;
     padding: 10px 22px;
     color: inherit;
     background-color: var(--bg-color);
     border: 2px solid var(--border-color);
     border-radius: 30px;
     cursor: pointer;
+    transition: border-color var(--animation-global);
 
     &:hover,
     &:focus {

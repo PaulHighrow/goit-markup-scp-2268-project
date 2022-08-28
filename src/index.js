@@ -5,15 +5,54 @@
 */
 
 (() => {
-  const navOpenBtn = document.querySelector('[open-button]');
-  const navCloseBtn = document.querySelector('[close-button]');
-  const navMobile = document.querySelector('[nav-mobile]');
+  const navOpenBtn = document.querySelector('[data-menu-open]');
+  const navCloseBtn = document.querySelector('[data-menu-close]');
+  const navMobile = document.querySelector('[data-nav-mobile]');
 
   navOpenBtn.addEventListener('click', toggleNav);
   navCloseBtn.addEventListener('click', toggleNav);
 
   function toggleNav() {
     navMobile.classList.toggle('is-open');
+  }
+})();
+
+
+/*
+  |==============================
+  | Modal window script
+  |==============================
+*/
+
+(() => {
+  var refs = {
+    openModalBtns: document.querySelectorAll('[data-modal-open]'),
+    closeModalBtn: document.querySelector('[data-modal-close]'),
+    modal: document.querySelector('[data-modal]'),
+    backdrop: document.querySelector('[data-backdrop]'),
+    body: document.querySelector('body'),
+  };
+
+  refs.openModalBtns.forEach(function (open) {
+    open.addEventListener('click', toggleModal);
+  });
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  // Press Escape to close
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      refs.modal.classList.add('modal--is-hidden'), refs.backdrop.classList.add('backdrop--is-hidden'), refs.body.classList.remove('no-scroll');
+    }
+  });
+
+  // Click into backdrop to close
+  refs.backdrop.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('modal--is-hidden');
+    refs.backdrop.classList.toggle('backdrop--is-hidden');
+    // Отключение скролла при вызове модальной формы
+    refs.body.classList.toggle('no-scroll');
   }
 })();
 
