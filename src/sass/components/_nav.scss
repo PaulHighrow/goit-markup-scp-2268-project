@@ -1,14 +1,22 @@
 .nav {
   @include font(16px, null, 19px);
+
   @media screen and (max-width: 767px) {
     display: none;
   }
 
   @media screen and (min-width: 768px) {
-    gap: 28px;
     margin-right: 28px;
     @include font(14px, null, 16px);
-    @include flexbox(flex, center, center, row);
+  }
+
+  &__list {
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      @include flexbox(flex, center, center, row);
+      gap: 28px;
+    }
   }
 
   &__link {
@@ -21,7 +29,7 @@
       text-shadow var(--animation-global);
 
     @media screen and (min-width: 768px) {
-      padding: 0;
+      padding: 28px 0;
     }
 
     &:hover,

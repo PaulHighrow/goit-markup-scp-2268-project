@@ -5,12 +5,10 @@
   background-color: var(--bg-color);
   width: 100vw;
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
-  padding: 10px 0;
+
   &__container {
     position: relative;
-    @media screen and (min-width: 768px) {
-      @include flexbox(flex, center, center, row);
-    }
+    @include flexbox(flex, center, space-between, row);
   }
 
   &__logo {
@@ -30,29 +28,19 @@
   }
 }
 
-.logo {
-  width: 66px;
-  height: 52px;
-}
-
-.menu__icon {
-  width: 28px;
-  height: 28px;
-  fill: var(--border-color);
-}
-
 .menu {
   background-color: transparent;
   border: none;
-  padding: 0;
-
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
+  padding: 22px 0;
 
   @media screen and (min-width: 768px) {
     display: none;
+  }
+
+  &__icon {
+    width: 28px;
+    height: 28px;
+    fill: var(--border-color);
   }
 
   &:hover .menu__icon,
@@ -60,11 +48,6 @@
   &:active .menu__icon {
     fill: var(--subscribe-color);
   }
-}
-
-.close__icon {
-  width: 24px;
-  height: 24px;
 }
 
 .close {
@@ -79,5 +62,10 @@
 
   @media screen and (min-width: 768px) {
     display: none;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
   }
 }

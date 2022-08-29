@@ -5,38 +5,10 @@
   background-image: url(../images/footer/footer-mobile@1x-320.jpg);
   background-size: cover;
 
-  .footer__cont1 {
-    // background-image: url(../images/footer/apple-mobile.jpg);
-    background-repeat: no-repeat;
-  }
-
-  .footer__navigation {
-    display: flex;
-  }
-
-  .footer__container {
-    // background-image: url(../images/footer/appleorange-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom;
-    // height: 124px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
-  .footer__img {
-    width: 320px;
-    height: 259px;
-
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: auto 150%;
-  }
-
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    // background-image: url(../images/footer/footer-mobile@2x-640.jpg);
+    background-image: url(../images/footer/footer-mobile@2x-640.jpg);
   }
 
   @media screen and (min-width: 768px) {
@@ -76,14 +48,6 @@
   }
 }
 
-.footer__logo {
-  @media screen and (min-width: 768px) {
-    align-self: flex-start;
-  }
-  @media screen and (min-width: 1280px) {
-    padding-top: 45px;
-  }
-}
 .footer__cont1 {
   display: block;
 
@@ -109,19 +73,11 @@
 .footer__list {
   color: #000000;
   display: block;
-  margin-left: 81px;
-  margin-top: 15px;
+  margin: 0 auto;
 
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-left: 146px;
-  }
-}
-.footer__item:not(:last-child) {
-  margin-bottom: 20px;
-
-  @media screen and (min-width: 768px) {
-    margin-right: 28px;
+    gap: 28px;
   }
 }
 
