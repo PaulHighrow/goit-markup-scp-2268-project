@@ -1,10 +1,15 @@
 <footer class="footer">
   <div class="container footer__container">
     <div class="footer__cont1">
-      <nav class="footer__nav">
-        <svg class="footer__logo">
+      <a
+        href="https://github.com/PaulHighrow/goit-markup-scp-2268-project"
+        aria-label="FoodSta"
+      >
+        <svg class="logo">
           <use href="./images/svg/icons.svg#logo"></use>
         </svg>
+      </a>
+      <nav class="footer__nav">
         <ul class="footer__list">
           <li class="footer__item">
             <a class="footer__link" href="#header">Home</a>
@@ -24,14 +29,27 @@
         </ul>
       </nav>
       <div class="footer__cont2">
-        <p class="footer-cont2__tittle">Subscribe</p>
+        <h3 class="footer-cont2__title">Subscribe</h3>
         <form class="footer__form">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            class="footer-cont2__input"
-          />
-          <button type="submit" class="footer-cont2__btn">Subscribe</button>
+          <label class="footer__label">
+            <input
+              class="footer-cont2__input"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+              pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+            />
+            <div class="warning warning--subscribe">
+              <svg class="warning__icon" width="11" height="11">
+                <use href="./images/svg/icons.svg#warning"></use>
+              </svg>
+              <span class="warning__text"
+                >Not a valid email address (example@email.com)</span
+              >
+            </div>
+          </label>
+          <button type="submit" class="btn btn--footer">Subscribe</button>
         </form>
 
         <p class="footer__label">

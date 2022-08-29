@@ -59,13 +59,15 @@
   padding: 5px;
 
   /* Рамка кнопки */
-  background-color: var(--bg-color);
-  border: none;
+  background-color: transparent;
+  border: 1px solid var(--subscribe-color);
+  border-radius: 50%;
 
   /* Эффект перехода цвета иконки */
   transition: fill var(--animation-global);
 
   cursor: pointer;
+  user-select: none;
 
   /* Размер иконки кнопки закрытия модальной формы */
   &__icon {
@@ -90,7 +92,7 @@
   width: 300px;
   left: 50%;
   top: 50%;
-  background-color: var(--warning-color);
+  background-color: var(--error-color);
   color: var(--bg-color);
   text-transform: none;
   transform: translate(-50%, 75%);
