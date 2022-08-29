@@ -1,17 +1,43 @@
-
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
   background-image: url(../images/footer/footer-mobile@1x-320.jpg);
   background-size: cover;
- 
+
+.footer__cont1{
+  background-image:url(../images/footer/apple-mobile.jpg);
+  background-repeat:no-repeat;
+}
+
+.footer__navigation{
+  display: flex;
+}
+
+.footer__container{
+  background-image:url(../images/footer/appleorange-mobile.jpg);
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:bottom ;
+  // height: 124px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__img{
+  width:320px;
+  height: 259px;
+
+  background-repeat:no-repeat;
+  background-position: right;
+  background-size: auto 150%;
+}
 
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     background-image: url(../images/footer/footer-mobile@2x-640.jpg);
-  
+
   }
 
   @media screen and (min-width: 768px) {
@@ -236,7 +262,6 @@
     }
 }
 .footer-doc {
-
   @media screen and (min-width: 768px) {
   margin-top: 80px;
   display: flex;
