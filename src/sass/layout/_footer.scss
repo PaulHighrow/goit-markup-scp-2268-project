@@ -1,17 +1,54 @@
 @media screen and (max-width: 767px) {
-  .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  .footer{
+  
+    background: #fefefe;
     box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
-    background-image: url(../images/footer/footer-mobile@1x-320.jpg);
-    background-size: cover;
+    // background-image: url(../images/footer/footer-mobile@1x-320.jpg);
+   
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
   }
+
+.footer__cont1{
+  background-image:url(../images/footer/apple-mobile.jpg);
+  background-repeat:no-repeat;
+}
+
+.footer__navigation{
+  display: flex;
+}
+
+.footer__container{
+  background-image:url(../images/footer/appleorange-mobile.jpg);
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:bottom ;
+  // height: 124px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__img{
+  width:320px;
+  height: 259px;
+
+  background-repeat:no-repeat;
+  background-position: right;
+  background-size: auto 150%;
+}
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .footer {
-      background-image: url(../images/footer/footer-mobile@2x-640.jpg);
+    .footer__cont1{
+      background-image: url(../images/footer/apple-mobile@2x.jpg);
+    }
+    .footer__img{
+      background-image: url(../images/footer/orange-mobile@2x.jpg)
+    }
+    .footer__container{
+      background-image:url(../images/footer/appleorange-mobile@2x.jpg)
     }
   }
 
@@ -33,6 +70,10 @@
     margin-bottom: 20px;
   }
 
+  .footer__logo {
+    width: 66px;
+    height: 52px;
+  }
   .footer__link {
     font-family: var(--main-font);
     font-style: normal;
@@ -50,7 +91,7 @@
     }
   }
 
-  .footer-cont2__title {
+  .footer-cont2__tittle {
     font-family: var(--main-font);
     font-style: normal;
     font-weight: 600;
@@ -62,10 +103,10 @@
     margin-top: 12px;
     margin-bottom: 20px;
   }
-  .footer__input {
+  .footer-cont2__input {
     width: 100%;
     height: 42px;
-    // background: var(--bg-color);
+    background: #fefefe;
     border: 1px solid var(--subscribe-color);
     border-radius: 30px;
     padding: 12px;
@@ -156,6 +197,9 @@
     padding-bottom: 100px;
     background: #fefefe;
     box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    // background-position:bottom;
   }
 
   @media (min-device-pixel-ratio: 1),
@@ -163,8 +207,7 @@
     (min-resolution: 1dppx) {
     .footer {
       background-image: url(../images/footer/footer-tablet@1x-768.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
+  
     }
   }
   @media (min-device-pixel-ratio: 2),
@@ -172,8 +215,13 @@
     (min-resolution: 2dppx) {
     .footer {
       background-image: url(../images/footer/footer-tablet@2x-1536.jpg);
+      
     }
   }
+
+.footer__navigation{
+  display:flex;
+}
 
   .footer__cont1 {
     display: block;
@@ -266,7 +314,7 @@
     }
   }
   .footer__label {
-    margin-top: 12px;
+    margin-top: 15px;
     font-family: var(--main-font);
     font-style: normal;
     font-weight: 400;
@@ -316,29 +364,36 @@
 }
 //==================DESKTOP===================
 @media screen and (min-width: 1280px) {
-  .footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background: #fefefe;
-    box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
-    background-repeat: no-repeat;
-    background-size: cover;
+  .footer{
+
+    // background-color: #212121;
+     
+      padding: 100px 0px;
+     
+      background-repeat: no-repeat;
+      background-size: 100% 60%;
+      background-position:bottom;
   }
+
+.footer__navigation{
+  display:flex;
+  align-items:center;
+}
   @media (min-device-pixel-ratio: 1),
     (min-resolution: 96dpi),
     (min-resolution: 1dppx) {
     .footer {
-      background-image: url(../images/footer/footer-pc@1x-1280.jpg);
+      background-image: url(../images/footer/footer-desctop.jpg);
     }
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .footer {
-      background-image: url(../images/footer/footer-pc@2x-2560.jpg);
+      background-image:url(../images/footer/footer-desctop@2x.jpg);
       // max-width: 1600px;
       // height: 600px;
-    }
+      }
   }
 
   .footer__cont1 {
@@ -433,7 +488,7 @@
     }
   }
   .footer__label {
-    margin-top: 12px;
+    margin-top: 15px;
     font-family: var(--main-font);
     font-style: normal;
     font-weight: 400;
