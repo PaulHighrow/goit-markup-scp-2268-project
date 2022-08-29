@@ -25,53 +25,66 @@
     }
   }
 
-  &__size {
+  &__pic {
+    margin: 0 auto;
     margin-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
+
     @media screen and (min-width: 1280px) {
       margin: 0;
     }
   }
-  &__pic {
-    margin-right: auto;
-    margin-left: auto;
-  }
+
   &__field {
     @media screen and (min-width: 768px) {
       max-width: 526px;
     }
   }
+
   &__title {
     margin-bottom: 28px;
     @include font(28px, 700, 33px);
+
     @media screen and (min-width: 768px) {
       margin-bottom: 20px;
       @include font(42px, 700, 49px);
     }
   }
+
   &__description {
     margin-bottom: 28px;
     @include font(14px, 400, 16px);
+
     @media screen and (min-width: 768px) {
       @include font(16px, 400, 19px);
       margin-bottom: 40px;
     }
   }
+
   &__list {
     margin-bottom: 28px;
+
     @media screen and (min-width: 768px) {
       display: flex;
+      gap: 67px;
       margin-bottom: 40px;
     }
+
     @media screen and (min-width: 1280px) {
       margin-bottom: 32px;
     }
   }
+
   &__item {
-    &:first-child {
-      margin-bottom: 28px;
+    @media screen and (min-width: 768px) {
+      min-width: 252px;
     }
+
+    &:first-child {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 28px;
+      }
+    }
+
     &::before {
       content: '';
       display: block;
@@ -81,24 +94,14 @@
       margin-bottom: 8px;
       background-color: #ffffff;
     }
-    @media screen and (min-width: 768px) {
-      width: 252px;
-      &:first-child {
-        margin-bottom: 0;
-        margin-right: 116px;
-      }
-    }
-    @media screen and (min-width: 1280px) {
-      &:first-child {
-        margin-right: 67px;
-      }
-    }
   }
+
   &__rocket::before {
     background-image: url(../images/svg/backup/rocket.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
+
   &__touch::before {
     background-image: url(../images/svg/backup/touch.svg);
     background-repeat: no-repeat;
@@ -116,7 +119,6 @@
 
   &__button {
     margin-right: 24px;
-    margin-bottom: 16px;
     @include font(13px, 500, 20px);
     padding: 10px 22px;
     color: inherit;
@@ -142,7 +144,7 @@
   @include font(14px, 400, 21px);
 
   color: #000000;
-  padding: 10px;
+  padding: 10px 0;
 
   user-select: none;
 
@@ -172,10 +174,14 @@
   &:checked ~ .hidden-text {
     @media screen and (max-width: 1279px) {
       display: block;
+      margin: 0;
     }
   }
 
-  /* Поява прихованого тексту "кнопки" */
+  &:checked ~ .read-label {
+    margin-bottom: 16px;
+  }
+
   &:checked ~ .read-label .read-less {
     display: flex;
   }
@@ -184,7 +190,6 @@
     display: flex;
   }
 
-  /* Та зникнення початкового тексту "кнопки" */
   &:checked ~ .read-label .read-more {
     display: none;
   }
