@@ -48,6 +48,10 @@
       margin-bottom: 20px;
       @include font(42px, 700, 49px);
     }
+
+    @media screen and (min-width: 1280px) {
+      @include font(42px, 700, 50px);
+    }
   }
 
   &__description {
@@ -57,6 +61,10 @@
     @media screen and (min-width: 768px) {
       @include font(16px, 400, 19px);
       margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      @include font(16px, 400, 24px);
     }
   }
 
@@ -111,10 +119,18 @@
   &__slogan {
     margin-bottom: 16px;
     @include font(18px, 700, 21px);
+
+    @media screen and (min-width: 1280px) {
+      @include font(18px, 700, 25px);
+    }
   }
 
   &__subject {
     @include font(14px, 400, 16px);
+
+    @media screen and (min-width: 1280px) {
+      @include font(14px, 400, 21px);
+    }
   }
 
   &__button {
