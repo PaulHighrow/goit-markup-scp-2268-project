@@ -24,13 +24,6 @@
       align-items: center;
     }
   }
-  
-  &__field {
-    @media screen and (min-width: 1600px) {
-      position: relative;
-      top: 40px;
-    }
-  }
 
   &__pic {
     margin: 0 auto;
@@ -44,6 +37,11 @@
   &__field {
     @media screen and (min-width: 768px) {
       max-width: 526px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      position: relative;
+      top: 40px;
     }
   }
 
