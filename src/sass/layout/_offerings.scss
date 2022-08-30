@@ -11,10 +11,16 @@
     padding-top: 150px;
     padding-bottom: 100px;
   }
+
   @media screen and (min-width: 1280px) {
     background-image: url(../images/svg/bg/bg-pc-top.svg);
     padding-top: 177px;
     padding-bottom: 43px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    background-size: 1920px;
+    background-position: center top;
   }
 
   &__content {

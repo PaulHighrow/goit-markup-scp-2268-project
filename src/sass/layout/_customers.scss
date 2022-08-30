@@ -12,10 +12,16 @@
     padding-bottom: 120px;
     background-image: url(../images/svg/bg/bg-tablet-bottom.svg);
   }
+
   @media screen and (min-width: 1280px) {
     padding-top: 100px;
     padding-bottom: 200px;
     background-image: url(../images/svg/bg/bg-pc-bottom.svg);
+  }
+
+  @media screen and (min-width: 1920px) {
+    background-size: 1920px;
+    background-position: center bottom;
   }
 
   &__title {
