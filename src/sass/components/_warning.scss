@@ -18,8 +18,9 @@
     @include font(10px, 400, 15px);
   }
 
-  &--subscribe {
-    bottom: -16px;
+  &--subscribe,
+  &--footer {
+    bottom: -14px;
     left: 0;
   }
 }

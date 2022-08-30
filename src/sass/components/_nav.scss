@@ -1,27 +1,38 @@
 .nav {
   @include font(16px, null, 19px);
+
   @media screen and (max-width: 767px) {
     display: none;
   }
 
   @media screen and (min-width: 768px) {
-    gap: 28px;
     margin-right: 28px;
     @include font(14px, null, 16px);
-    @include flexbox(flex, center, center, row);
+  }
+
+  &__list {
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      @include flexbox(flex, center, center, row);
+      gap: 28px;
+    }
+
+    &--footer {
+      width: auto;
+      margin: 0 auto;
+    }
   }
 
   &__link {
     display: block;
     padding: 16px;
-    width: 100%;
-    height: 100%;
     color: var(--main-color);
     transition: color var(--animation-global),
       text-shadow var(--animation-global);
 
     @media screen and (min-width: 768px) {
-      padding: 0;
+      padding: 28px 0;
     }
 
     &:hover,
@@ -42,6 +53,33 @@
       @media screen and (min-width: 1280px) {
         text-shadow: 0 0 0.55px var(--button-color),
           0 0 0.55px var(--button-color), 0 0 0.55px var(--button-color);
+      }
+    }
+
+    &--footer {
+      @include font(14px, null, 16px);
+      background-color: transparent;
+      color: var(--secondary-color);
+      padding: 8px;
+
+      @media screen and (min-width: 768px) {
+        padding: 18px 0;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: transparent;
+        text-shadow: 0 0 0.4px var(--button-color),
+          0 0 0.4px var(--button-color), 0 0 0.4px var(--button-color);
+        text-decoration: underline;
+        color: var(--button-color);
+        text-underline-offset: 2px;
+
+        @media screen and (min-width: 1280px) {
+          text-shadow: 0 0 0.55px var(--button-color),
+            0 0 0.55px var(--button-color), 0 0 0.55px var(--button-color);
+        }
       }
     }
   }
