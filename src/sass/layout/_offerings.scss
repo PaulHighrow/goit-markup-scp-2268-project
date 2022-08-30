@@ -159,7 +159,7 @@
   @include flexbox(inline-flex, center, null, row);
   @include font(14px, 400, 21px);
 
-  color: #000000;
+  color: var(--secondary-color);
   padding: 10px 0;
 
   user-select: none;

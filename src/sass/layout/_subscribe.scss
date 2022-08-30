@@ -41,6 +41,11 @@
     @media screen and (min-width: 768px) {
       @include font(42px, 700, 50px);
     }
+
+    &--footer {
+      @include font(14px, 500, 21px);
+      margin-bottom: 12px;
+    }
   }
 
   &__text {
@@ -90,7 +95,7 @@
     @include font(12px, 400, 18px);
 
     @media screen and (min-width: 768px) {
-      width: 395px;
+      min-width: 395px;
     }
 
     &:not(:placeholder-shown):required:valid {
