@@ -57,8 +57,11 @@
     }
 
     &--footer {
+      @include font(14px, null, 16px);
       background-color: transparent;
       color: var(--secondary-color);
+      padding: 8px;
+
       @media screen and (min-width: 768px) {
         padding: 18px 0;
       }
@@ -66,6 +69,7 @@
       &:hover,
       &:focus,
       &:active {
+        background-color: transparent;
         text-shadow: 0 0 0.4px var(--button-color),
           0 0 0.4px var(--button-color), 0 0 0.4px var(--button-color);
         text-decoration: underline;
