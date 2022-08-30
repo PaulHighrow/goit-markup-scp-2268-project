@@ -23,6 +23,16 @@
       gap: 90px;
       align-items: center;
     }
+    @media screen and (min-width: 1600px) {
+      position: relative;
+    }
+  }
+  &__field {
+    @media screen and (min-width: 1600px) {
+      position: absolute;
+      left: 660px;
+      top: 120px;
+    }
   }
 
   &__pic {
