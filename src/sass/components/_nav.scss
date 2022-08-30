@@ -21,14 +21,6 @@
     &--footer {
       width: auto;
       margin: 0 auto;
-      @media screen and (min-width: 768px) {
-        margin-left: 114px;
-      }
-
-      @media screen and (min-width: 1280px) {
-        margin-left: 145px;
-      }
-      
     }
   }
 
@@ -67,6 +59,9 @@
     &--footer {
       background-color: transparent;
       color: var(--secondary-color);
+      @media screen and (min-width: 768px) {
+        padding: 18px 0;
+      }
 
       &:hover,
       &:focus,
