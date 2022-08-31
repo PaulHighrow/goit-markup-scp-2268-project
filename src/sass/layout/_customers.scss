@@ -8,7 +8,6 @@
   background-image: url(../images/svg/bg/bg-mobile-bottom.svg);
 
   @media screen and (min-width: 768px) {
-    padding-top: 60px;
     padding-bottom: 120px;
     background-image: url(../images/svg/bg/bg-tablet-bottom.svg);
   }
@@ -106,5 +105,12 @@
 
   &__description {
     @include font(14px, 400, 21px);
+  }
+
+  &__container::before {
+    display: block;
+    content: '';
+    height: 100px;
+    margin: -100px 0 0;
   }
 }

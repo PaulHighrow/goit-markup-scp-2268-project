@@ -9,6 +9,13 @@
 
   &__container {
     text-align: center;
+
+    &::before {
+      display: block;
+      content: '';
+      height: 100px;
+      margin: -100px 0 0;
+    }
   }
 
   &__title {
