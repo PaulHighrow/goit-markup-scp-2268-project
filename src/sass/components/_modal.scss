@@ -41,41 +41,32 @@
   }
 }
 
-/* Кнопка закрытия модального окна */
 .close-btn {
-  /* Позиционирование кнопки */
   position: absolute;
   top: 8px;
   right: 8px;
 
-  /* Выравнивание иконки */
   display: flex;
   align-items: center;
   justify-content: center;
 
-  /* Размеры кнопки */
   width: 32px;
   height: 32px;
   padding: 5px;
 
-  /* Рамка кнопки */
   background-color: transparent;
-  border: 1px solid var(--subscribe-color);
-  border-radius: 50%;
+  border: none;
 
-  /* Эффект перехода цвета иконки */
   transition: fill var(--animation-global);
 
   cursor: pointer;
   user-select: none;
 
-  /* Размер иконки кнопки закрытия модальной формы */
   &__icon {
     width: 32px;
     height: 32px;
   }
 
-  /* Эффекты при ховере и фокусе на кнопку */
   &:hover,
   &:focus {
     fill: var(--subscribe-color);
