@@ -29,11 +29,24 @@
     background-size: 785px, 203px;
     background-position: bottom right, top right;
 
+    // background-image: url(../images/footer/orange-tablet-left@1x-184.png),
+    //   url(../images/footer/fruits-tablet-mid@1x-538.png),
+    //   url(../images/footer/apple-tablet@1x-153.png),
+    //   url(../images/footer/orange-tablet-right@1x-203.png);
+    // background-repeat: no-repeat;
+    // background-size: 184px, 538px, 153px, 203px;
+    // background-position: bottom left, bottom center, bottom right, top right;
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/footer/fruits-tablet@2x-1570.jpg),
         url(../images/footer/orange-tablet@2x-406.jpg);
+
+      // background-image: url(../images/footer/orange-tablet-left@2x-368.png),
+      //   url(../images/footer/fruits-tablet-mid@2x-1076.png),
+      //   url(../images/footer/apple-tablet@2x-306.png),
+      //   url(../images/footer/orange-tablet-right@2x-406.png);
     }
   }
 
