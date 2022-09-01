@@ -31,7 +31,6 @@
   function toggleModal() {
     refs.modal.classList.toggle('modal--is-hidden');
     refs.backdrop.classList.toggle('backdrop--is-hidden');
-    // Отключение скролла при вызове модальной формы
     refs.body.classList.toggle('no-scroll');
   }
 })();

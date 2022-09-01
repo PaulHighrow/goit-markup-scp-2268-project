@@ -2,7 +2,6 @@
 @import './utils/vars';
 @import './utils/visually-hidden';
 @import './utils/mixin';
-@import './utils/animations';
 @import './utils/no-scroll';
 
 // Base styles
@@ -27,6 +26,3 @@
 @import './layout/subscribe';
 @import './layout/form';
 @import './layout/footer';
-
-// Vendor styles
-@import './vendor/vendor';

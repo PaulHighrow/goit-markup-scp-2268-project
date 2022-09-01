@@ -1,26 +1,24 @@
 .warning {
+  @include font(10px, 400, 15px);
   opacity: 0;
   position: absolute;
-  bottom: -15px;
+  bottom: -14px;
   right: 0;
   display: inline-flex;
-  align-items: center;
   gap: 4px;
   color: var(--warning-color);
   transition: opacity var(--animation-global);
 
-  &__icon {
+  &::before {
+    content: '';
+    display: inline-block;
     width: 11px;
     height: 11px;
+    background-image: url(../images/svg/frame.svg);
+    background-size: cover;
   }
 
-  &__text {
-    @include font(10px, 400, 15px);
-  }
-
-  &--subscribe,
-  &--footer {
-    bottom: -14px;
-    left: 0;
+  &-input {
+    border-color: var(--warning-color);
   }
 }

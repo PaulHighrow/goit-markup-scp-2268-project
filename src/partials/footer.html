@@ -34,26 +34,19 @@
       </div>
       <div class="footer__subscribe">
         <p class="footer__title">Subscribe</p>
-        <form class="footer__form">
+        <form class="footer__form validateFooter">
           <label class="footer__label">
             <input
-              class="footer__input"
+              class="footer__input footerInput"
               type="email"
               name="email"
               placeholder="Enter your email"
               required
               pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+              id="email"
             />
-            <span class="warning warning--footer">
-              <svg class="warning__icon" width="11" height="11">
-                <use href="./images/svg/icons.svg#warning"></use>
-              </svg>
-              <span class="warning__text">
-                Not a valid email address (example@email.com)
-              </span>
-            </span>
           </label>
-          <button class="footer__btn" type="submit">Subscribe</button>
+          <button class="footer__btn submitBtn" type="submit">Subscribe</button>
         </form>
         <p class="footer__policy">
           By subscribing you agree to with our&nbsp;<a

@@ -83,20 +83,12 @@
     @include font(14px, null, 21px);
 
     color: var(--main-color);
-  }
 
-  /* Изменение цвета рамки при фокусе поля формы */
-  &__input:focus-within,
-  &__textarea:focus-within {
-    border-color: var(--border-color);
-
-    /* Эффект перехода цвета рамки */
     transition: border-color var(--animation-global);
   }
 
-  /* Изменение цвета иконок модального окна при фокусе поля формы */
   &__input:focus-within + .form__icon {
-    fill: var(--border-color);
+    fill: var(--subscribe-color);
   }
 
   &__input:not(:placeholder-shown):required:valid {
