@@ -93,7 +93,8 @@
   opacity: 0;
   transition: opacity var(--animation-global) 2268ms;
 }
-
-[data-tooltip]:hover::after {
-  opacity: 1;
+@media screen and (min-width: 1280px) {
+  [data-tooltip]:hover::after {
+    opacity: 1;
+  }
 }
